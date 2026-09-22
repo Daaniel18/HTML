@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+.valikko {
+  background-color: lightblue;
+  padding: 10px;
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+main,
+footer {
+  padding: 24px;
+  margin: 0 auto;
+}
+
+button {
+  background-color: lightblue;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: deepskyblue;
+}
+
+:focus {
+  outline: 3px solid red;
+}
+
+.tapahtumalista {
+  background-color: lightgray;
+  padding: 10px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+.tunniste {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  color: #ffffff;
+  background-color: #2f7a52;
+  font-size: 0.85rem;
+}
+
+
+/* breakpoint pienille näytöille */
+@media (max-width: 600px) {
+  .tapahtumalista {
+    flex-direction: column;
+  }
+
+  .valikko {
+    padding: 6px;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Syksyn koodikerho</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="valikko">
+        <a href="#tapaamiset">Tapaamiset</a>
+        <a href="#ilmoittautuminen">Ilmoittautumiset</a>
+      </nav>
+      <h1>Syksyn koodikerho</h1>
+      <p>Rauhallista harjoittelua ja yhteistä ohjelmointia syyslukukaudella.</p>
+    </header>
+    <main>
+      <section id="kerhon-tarina">
+        <h2>Syksyn koodikerho</h2>
+        <p>
+          Syksyn koodikerho on aloitteleville ohjelmoinnista ja web-kehityksestä
+          kiinnostuneille tarkoitettu yhteisöllinen kokoontumispaikka, jossa
+          opitaan HTML:n, CSS:n ja JavaScriptin perusteita käytännön
+          harjoitusten kautta.
+        </p>
+      </section>
+      <section>
+        <h2>Miksi kerho on hyödyllinen?</h2>
+        <p>
+          Kerho tarjoaa mahdollisuuden kokea ohjelmointi käytännössä, oppia
+          pikkuhiljaa ja saada tukea ryhmältä virheiden korjaamisessa.
+        </p>
+      </section>
+      <section>
+        <h2>Kerho tekee oppimisesta selkeää</h2>
+        <p>
+          Tekeminen, kokeileminen ja virheiden korjaaminen auttavat
+          hahmottamaan, miten HTML, CSS ja navigointi toimivat yhdessä
+          kokonaisuutena.
+        </p>
+      </section>
+      <section id="tapaamiset" class="tapahtumalista">
+        <h2>Tulevat tapaamiset</h2>
+        <article>
+          <span class="tunniste">Uusi</span>
+          <img
+            src="https://picsum.photos/seed/tyopaja1/400/250"
+            alt="Osallistujia kannettavien tietokoneiden ääressä html-työpajassa"
+            width="400"
+            height="250"
+          />
+          <h3>Työpaja 1: 17.9.2024</h3>
+          <p>
+            Ensimmäinen työpaja, jossa html tutuksi, Torstai 17.9. klo 16-18,
+            Kampus luokka B222
+          </p>
+        </article>
+        <article>
+          <span class="tunniste">17.9.</span>
+          <img
+            src="https://picsum.photos/seed/csskahvila/400/250"
+            alt="Kahvikupin vieressä avattu kannettava tietokone css-koodilla"
+            width="400"
+            height="250"
+          />
+          <h3>CSS kahvila: 24.9.2024</h3>
+          <p>
+            Toinen työpaja, jossa CSS tutuksi, Torstai 24.9. klo 16-18, Kampus
+            luokka B222
+          </p>
+        </article>
+        <article>
+          <span class="tunniste">24.9.</span>
+          <img
+            src="https://picsum.photos/seed/csspaja/400/250"
+            alt="Ryhmä opiskelijoita suunnittelemassa verkkosivun ulkoasua taululla"
+            width="400"
+            height="250"
+          />
+          <h3>CSS paja: 25.9.2024</h3>
+          <p>
+            Toinen työpaja, jossa CSS tutuksi, Torstai 25.9. klo 16-18, Kampus
+            luokka B222
+          </p>
+        </article>
+        <article>
+          <span class="tunniste">25.9.</span>
+          <img
+            src="https://picsum.photos/seed/jspaja/400/250"
+            alt="Näyttö, jossa näkyy JavaScript-koodia ja selaimen konsoli"
+            width="400"
+            height="250"
+          />
+          <h3>JS paja: 26.9.2024</h3>
+          <p>
+            Toinen työpaja, jossa CSS tutuksi, Torstai 26.9. klo 16-18, Kampus
+            luokka B222
+          </p>
+        </article>
+      </section>
+      <section id="ilmoittautuminen">
+        <h2>Ilmoittaudu koodikerhoon</h2>
+        <p>
+          Jätä yhteystietosi, niin varaamme sinulle paikan seuraavaan
+          tapaamiseen.
+        </p>
+        <form action="#" method="post">
+          <p>
+            <label for="nimi">Nimi</label>
+            <input type="text" id="nimi" name="nimi" required />
+          </p>
+          <p>
+            <label for="sahkoposti">Sahkoposti</label>
+            <input type="email" id="sahkoposti" name="sahkoposti" required />
+          </p>
+          <p>
+            <label for="tapaaminen">Valitse tapaaminen</label>
+            <select id="tapaaminen" name="tapaaminen" required>
+              <option value="">Valitse tapaaminen</option>
+              <option value="html-tyopaja">HTML-tyopaja</option>
+              <option value="css-kahvila">CSS-kahvila</option>
+            </select>
+          </p>
+          <button
+            type="submit"
+            formaction="https://erkkotestaa.requestcatcher.com/"
+          >
+            Laheta ilmoittautuminen
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2026 Syksyn koodikerho</p>
+    </footer>
+  </body>
+</html>
